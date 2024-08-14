@@ -1,0 +1,97 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+}
+
+.gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    flex: none;
+    grid-gap: 20px;
+
+
+}
+
+.gallery div img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+
+
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+#back {
+    transform: rotate(120 deg);
+}
+
+.rohit {
+    height: 200px;
+    width: 260px;
+}
+
+#back,
+#next {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+#rutu {
+    height: 200px;
+    width: 70%;
+    margin-left: 40px;
+
+}
+
+#kholi {
+    height: 200px;
+    width: 80%;
+    margin-right: 90px;
+}
+
+.dhoni {
+    height: 200px;
+    width: 30%;
+}
+
+.hardik {
+    height: 200px;
+    width: 10%;
+}
+
+#jadeja {
+    height: 200px;
+    width: 80%;
+}
